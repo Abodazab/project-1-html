@@ -1,0 +1,1072 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* header */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(71, 151, 231, 0.5);
+    z-index: 100;
+    position: fixed;
+    color: white;
+    
+}
+.fa-plane-circle-check{
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 28px;
+    float: left;
+}
+.header-search{
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+.header-search input{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.header-search i{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 10px;
+    color: #000;
+}
+.header-menu{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    list-style: none;
+    position: relative;
+}
+.header-menu-list{
+    list-style: none;
+    float: left;
+}
+.header-menu li{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    padding: 10px 0;
+}
+.header-menu-list li{
+    float: left;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.blog-menu{
+    list-style: none;
+    float: right;
+    width: 170px;
+    position: absolute;
+    top: 30px;
+    background-color: rgba(71, 151, 231, 0.8);
+    border-radius: 20px;
+    display: none;
+}
+.blog-menu li{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 10px;
+}
+.blog-menu li a{
+    text-decoration: none;    
+    color: #fff;
+}
+.Blog:hover .blog-menu{
+    display: block;
+}
+.header-menu-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: 0.3s;
+}
+.header-menu-list li a:hover::after {
+  width: 100%;
+  height: 2px; 
+}
+
+/* section1 */
+.section1{
+    background-image: url(../images/world-tourism.jpg__1320x740_q95_crop_subsampling-2_upscale.webp);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.section1-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0 , 0.5);
+}
+.section1-content {
+    width: 60%;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+    text-align: center;
+}
+.section1-title {
+    font-size: 65px;
+    text-transform: uppercase;
+}
+.section1-text {
+    letter-spacing: 1.5px;
+    margin: 15px  0px;
+    color: #d5c9c9;
+    font-size: 17px;
+}
+.section1-btn {
+    width: 140px;
+    padding: 16px  0px;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.section1-btn2 {
+    background-color: rgba(71, 151, 231);
+    color: #fff;
+    margin-left: 12px;
+}
+.section1-btn:hover {
+    opacity: 0.5 ;
+}
+
+/* section2 */
+.section2{
+    width: 100%;
+    height: 100vh;
+}
+.section2-title {
+    width: 100%;
+    height: 25%;        
+    text-align: center;
+}
+.section2-text {
+    font-size: 35px;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+.section2-underline {
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section2-parant {
+    width: 100%;
+    height: 75%;
+}
+.section2-child {
+    position: relative;
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(71, 151, 231);
+    float: left;
+    margin-left: 37px;
+    margin-top: 100px;
+}
+.fa-plane , .fa-earth-americas , .fa-hotel{
+    color: rgba(71, 151, 231);
+    font-size: 50px;
+    margin-top: 10px;
+}
+.section2-child-title {
+    font-size: 25px;
+    margin: 20px 10px;
+    text-transform: capitalize;
+}
+.section2-child:hover .section2-child-title{
+    color: rgb(246, 247, 248);
+}
+.section2-child::after {
+    position: absolute;
+    content: "";
+    width: 0 ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 151, 231);
+    opacity: 0.8;
+    border-radius: 15px; 
+}
+.section2-child:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.4;
+    z-index: -1;
+}
+.section2-child-text {
+    font-size: 15px;
+    margin: 20px 10px;
+    color: rgb(83, 85, 88);
+    text-transform: capitalize;
+}
+.section2-child:hover .section2-child-text{
+    color: rgb(0, 0, 0);
+}
+.section2-child-link {
+    font-size: 15px;
+    margin: 20px 10px;
+    color:  rgba(71, 151, 231 );
+    text-decoration: none;
+}
+
+/* section3 */
+.section3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(81, 144, 206, 0.19);
+}
+.section3-title {
+    width: 100%;
+    height: 25%;        
+    text-align: center;
+}
+.section3-text {
+    font-size: 35px;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+.section3-underline {
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section3-parant {
+    width: 100%;
+    height: 75%;
+}
+.section3-child , .section3-child0 {
+    width: 25%;
+    height: 40%;
+    text-align: center;
+    border: 0px;
+    float: left;
+    margin-left: 100px;
+    position: relative;
+}
+.section3-child0 {
+    margin-top: 40px;
+
+}
+.section3-child1 {
+    background-image: url(../images/62-004557-cheapest-places-travel-2022-2.jpeg);
+    background-size: cover;
+}
+.section3-child2 {
+    background-image: url(../images/62-004557-cheapest-places-travel-2022-3.jpeg);
+    background-size: cover;
+}
+.section3-child3 {
+    background-image: url(../images/62-004558-cheapest-places-travel-2022-4.jpeg);
+    background-size: cover;
+}
+.section3-child4 {
+    background-image: url(../images/62-004558-cheapest-places-travel-2022-5.jpeg);
+    background-size: cover;
+}
+.section3-child5 {
+    background-image: url(../images/62-004558-cheapest-places-travel-2022-6.jpeg);
+    background-size: cover;
+}
+.section3-child6 {
+    background-image: url(../images/62-004559-cheapest-places-travel-2022-7.jpeg);
+    background-size: cover;
+}
+.section3-child-title {
+    font-size: 45px;
+    margin: 20px 10px;
+    text-transform: capitalize;
+    color: rgb(155, 163, 171);
+    visibility: hidden;
+}
+.section3-child-overlay {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0 , 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.section3-child-text {
+    font-size: 17px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    text-transform:lowercase;
+    visibility: hidden;
+}
+.fa-thumbs-up , .fa-circle-info {
+    
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.section3-child:hover .section3-child-title  , .section3-child0:hover .section3-child-title{
+    visibility: visible;
+}
+.section3-child:hover .section3-child-overlay , .section3-child0:hover .section3-child-overlay{
+    visibility: visible;
+}
+.section3-child:hover .section3-child-text , .section3-child0:hover .section3-child-text{
+    visibility: visible;
+}
+.section3-child:hover .fa-thumbs-up , .section3-child0:hover .fa-thumbs-up{
+    visibility: visible;
+}
+.section3-child:hover .fa-circle-info , .section3-child0:hover .fa-circle-info{
+    visibility: visible;
+}
+
+/* section4 */
+.section4{
+    width: 100%;
+    height: 100vh;
+}
+.section4-title {
+    width: 100%;
+    height: 20%;        
+    text-align: center;
+}
+.section4-text {
+    font-size: 40px;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+.section4-underline {
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section4-parant {
+    width: 100%;
+    height: 80%;
+}
+.section4-child , .section4-child0 {
+    width: 25%;
+    height: 35%;
+    border: 1px solid rgba(71, 151, 231);
+    border-radius: 10px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    position: relative;
+}
+.section4-child0 {
+    margin-top: 80px;
+}
+.section4-child::after , .section4-child0::after {
+    position: absolute;
+    content: "";
+    width: 0 ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 151, 231);
+    opacity: 0;
+    border-radius: 10px; 
+}
+.section4-child:hover::after , .section4-child0:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.4;
+    z-index: -1;
+}
+.section4-child i , .section4-child0 i {
+    font-size: 40px;
+    color: rgba(71, 151, 231);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;    
+}
+.section4-child-contant {
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.section4-child-title {
+    font-size: 28px;
+    text-transform: capitalize;
+    color: black;
+    
+}
+.section4-child-text {
+    font-size: 18px;
+    margin-top: 35px;
+    color: rgba(155, 163, 171, 0.767); 
+    letter-spacing: 1px; 
+}
+.section4-child:hover  .section4-child-title , .section4-child0:hover .section4-child-title {
+    color: rgb(21, 103, 186);
+}
+.section4-child:hover  .section4-child-text , .section4-child0:hover .section4-child-text {
+    color: rgb(0, 0, 0);
+}
+
+/* section5 */
+.section5{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.section5-parant {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.section5-child1 , .section5-child2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.section5-child1 h2 {
+    font-size: 40px;
+    color: rgb(7, 7, 7);
+    padding-top: 50px;
+    padding-left: 50px;
+    text-transform: capitalize;
+}
+.section5-child1-underline {
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section5-child1-text {
+    margin-left: 50px;
+    margin-top: 50px;
+    color: rgb(166, 166, 170);
+    font-size: 14px;
+    word-spacing: 3px;
+    text-transform: lowercase;
+}
+.section5-child1 ul{
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.section5-child1 ul li {
+    margin-top: 30px;
+    color: rgb(166, 166, 170);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.section5-child1 ul li i{
+    font-size: 15px;
+    margin-right: 10px;
+    color:  rgba(71, 151, 231); ;
+}
+.section5-child2 img {
+    margin-top: 60px;
+    margin-left: 90px;
+    width: 80%;
+    height: 80%;
+    display: block;
+}
+.section5-child2-icons {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    font-size: 15px;
+    color: rgba(71, 151, 231);
+}
+.section5-child2-icons i {
+    margin-right: 10px;
+}
+.notactive {
+    color: rgba(81, 144, 206, 0.5);
+}
+.notactive:hover {
+    color: rgba(71, 151, 231);
+}
+
+/* section6 */
+.section6{
+    width: 100%;
+    height: 53vh;
+}
+.section6-parant{
+    background: url(../images/وكالة-سفر-.webp) no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section6-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.section6-child{
+    float: left;
+    width: 10%;
+    height: 100%;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 180px;
+    
+}
+.section6-child i {
+    font-size: 40px;
+    display: block;
+    color: #1E90FF;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 45px;
+}
+
+.section6-child-title {
+    font-size: 25px;
+    display: block;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 50px;
+    text-align: center;
+}
+.section6-child-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: lowercase;
+    text-align: center;
+    margin-top: 5px;
+    color:#FFFFFF;
+} 
+
+/* section7 */
+.section7{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(81, 144, 206, 0.19);
+    text-align: center;
+}
+.section7-title {
+    width: 100%;
+    height: 20%; 
+}
+.section7-text {
+    font-size: 40px;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+.section7-underline {
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section7-parant{
+    width: 90%;
+    height: 80%;
+    margin-left: 130px;
+}
+.section7-child {
+    float: left;
+    width: 25%;
+    border:  rgba(71, 151, 231) 1px solid;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 60px;
+    position: relative;
+}
+.section7-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 151, 231);
+    border-radius: 10px;
+    opacity: 0.7;
+    width: 100%;
+    height: 0;
+}
+.section7-child:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.4;
+    z-index: -1;
+
+}
+.section7-child-title {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.section7-child:hover .section7-child-title {
+    color:rgb(0, 65, 131)
+}
+.section7-child-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgba(71, 151, 231, 0.8);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section7-child:hover .section7-child-circle  {
+    border: 2px solid rgb(0, 65, 131)
+}
+.section7-child-circle-price {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+}
+.section7-child-circle-text {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    color: black;
+}
+.section7-child-text {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+    padding: 10px 0px;
+}
+.section7-child-btn {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 0px;
+    width: 180px;
+    color: black;
+    background-color: rgba(211, 211, 211, 0.7);
+    border: 2px solid rgba(71, 151, 231);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*section8*/
+.section8{
+    width: 100%;
+    height: 53vh;
+}
+.section8-parant{
+    background: url(../images/desktop-wallpaper-travel-travel-agency.jpg) no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.section8-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.section8-child {
+    float: left; 
+    width: 420px;
+    height: 180px;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.section8-child-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.section8-child-image1{
+    background: url(../images/istockphoto-1432226243-612x612.jpg) no-repeat center ;
+    background-size: cover;
+}
+.section8-child-image2{
+    background: url(../images/istockphoto-2099403180-612x612.jpg) no-repeat center ;
+    background-size: cover;
+}
+.section8-child-info{
+    position: absolute;
+    top: 0;
+    left:120;
+    margin-top: 20px;
+}
+.section8-child-info h2{
+    font-size: 30px;
+    color: white;
+}
+.section8-child-info h4{
+    font-size: 20px;
+    color: wheat
+}
+.section8-child-text{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    bottom: 20;
+    left: 0
+}
+
+
+/*section9*/
+.section9{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.section9-title {
+    width: 100%;
+    height: 20%; 
+}
+.section9-text {
+    font-size: 40px;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+.section9-underline {
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section9-parant{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+ .section9-child {
+    float: left;
+    background-color: rgba(81, 144, 206, 0.19);
+    width: 30%;
+    border-radius: 20px;
+    padding: 18px  14px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+ }
+ .section9-child2 {
+    margin: 0px  5% ;
+    margin-top: 100px;
+ }
+ .section9-child-image {
+    width: 90%;
+    margin: auto;
+    position: relative; 
+ }
+ .section9-child img {
+    width: 100%;
+    
+ }
+ .section9-child-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ;
+ }
+ .section9-child:hover    .section9-child-icon {
+    visibility: visible;
+    opacity: 0.5 ;
+ }
+ .section9-child-icon  a {  
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(71, 151, 231);   
+    margin-left: auto ;
+ }
+
+ .section9-child-icon a  i {
+      line-height: 40px;
+      font-size: 23px;
+      color: rgb(255, 255, 255);
+ }
+ 
+ .section9-child-name {
+    padding: 10px  0px;
+    text-transform: capitalize;
+    color: #000;
+ }
+
+ .section9-child-postion {
+    text-transform: capitalize;
+    color: gray;
+ }
+
+ .section9-child:hover  .section9-child-name {
+    color: rgb(83, 83, 83);
+ }
+
+ .section9-child:hover  .section9-child-postion {
+    color: rgb(26, 98, 169);
+ }
+ .section9-child::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    left: 0;
+    border-radius: 20px;
+    background-color: rgba(71, 151, 231);
+    opacity: 0.5;
+   
+ }
+ .section9-child:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+ }
+
+
+ /*section10*/
+.section10{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.section10-title {
+    width: 100%;
+    height: 20%; 
+}
+.section10-text {
+    font-size: 40px;
+    padding-top: 70px;
+    text-transform: capitalize;
+}
+.section10-underline {
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(71, 151, 231);
+}
+.section10-parant{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+.section10-child {
+    float: left;
+    border: 1px solid rgba(71, 151, 231);
+    border-radius: 20px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 18px  14px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    z-index: 1;
+ }
+ .section10-child2 {
+    margin: 0px  5% ;
+    margin-top: 40px;
+ }
+ .section10-child-image {
+    width: 70%;
+    margin: auto;
+ }
+ .section10-child img {
+    width: 100%;
+    border-radius: 20px;
+ }
+ .section10-child-info {
+    margin-top: 10px;
+ }
+ .section10-child-icon {
+    display: inline;
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+ }
+ .section10-child-icon i {
+    line-height: 40px;
+    font-size: 23px;
+    color: rgba(71, 151, 231);
+ }
+ 
+ .section10-child-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px  0px;
+    text-transform: capitalize;
+    color: #000;
+ }
+
+ .section10-child-text {
+    padding: 10px  0px;
+    color: gray;
+ }
+.section10-child-link {
+    font-size: 15px;
+    padding: 20px  0px;
+    text-transform: lowercase;
+    color: rgba(71, 151, 231);
+    text-decoration: none;
+    font-style: italic;
+ }
+ .section10-child::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    left: 0;
+    border-radius: 20px;
+    background-color: rgba(71, 151, 231);
+    opacity: 0.6;
+
+ }
+ .section10-child:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 0.5s;
+    z-index: -1;
+ }
+.section10-child:hover .section10-child-icon i {
+    cursor: pointer;
+ }
+.section10-child:hover .section10-child-title {
+    color: rgb(255, 255, 255);
+ }
+.section10-child:hover .section10-child-text {
+    color: rgb(26, 76, 126);
+ }
+.section10-child:hover .section10-child-link {
+    cursor: pointer;
+}
+
+/*section11*/
+.section11{
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(81, 144, 206, 0.19);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.section11-image{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #92c4f5;
+}
+.section11-social-icons{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section11-social-icons a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px;
+    color: white;
+    background-color:  rgba(71, 151, 231);
+    border: 2px solid rgba(71, 151, 231);
+    border-radius: 50%;
+}
+.section11-social-icons a:hover{
+    background-color: rgb(3, 41, 80);
+    cursor: pointer;
+}
+.section11-copyright{
+    font-size: 14px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
