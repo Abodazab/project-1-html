@@ -1043,7 +1043,7 @@ body{
 }
 .section11-social-icons{
     position: absolute;
-    top: 80%;
+    top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1064,7 +1064,7 @@ body{
 .section11-copyright{
     font-size: 14px;
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: gray;
